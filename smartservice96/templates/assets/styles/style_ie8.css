@@ -1,0 +1,59 @@
+/*----
+         
+.someBlock {
+       background:transparent;
+       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#80ff0000,endColorstr=#80ff0000);
+       zoom: 1;
+} 
+Фишка в том, чтобы указать начальный и конечный цвета одинаковыми (ff0000 — красный) и воспользоваться тем, 
+что для градиента в этом фильтре можно задать альфаканал (в примере значение 80).
+
+Для справки: в фильтре используется шестнадцатеричная система и полностью непрозрачному цвету соответствует 
+код FF (в десятичной это 255). Соответственно шестнадцатеричное 80 — это десятичное 128, т.е 50% прозрачности.
+
+
+---*/
+
+
+.header-wr{
+       background-color:transparent;
+       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#d8ffffff,endColorstr=#d8ffffff);
+       zoom: 1;
+
+}
+.search INPUT{
+       background-color:transparent;
+       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#2b000000,endColorstr=#2b000000);
+       zoom: 1;
+}
+.product-header{
+        background-color:transparent;
+       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#97000000,endColorstr=#97000000);
+       zoom: 1;  
+}
+.product-item:hover .product-header{
+        background-color:transparent;
+       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#E54F0000,endColorstr=#E54F0000);
+       zoom: 1;  
+}
+.main-zakaz-right{
+        background-color:transparent;
+       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc000000,endColorstr=#cc000000);
+       zoom: 1;   
+}
+.main-left{
+        background-color:transparent;
+       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc000000,endColorstr=#cc000000);
+       zoom: 1;    
+    
+}
+.img-hover{
+        background-color:transparent;
+       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#E54F0000,endColorstr=#E54F0000);
+       zoom: 1; 
+}
+.work-img a{
+        background-color:transparent;
+       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#E5831e1e,endColorstr=#E5831e1e);
+       zoom: 1; 
+}

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Главная</title>
+		<meta charset="UTF-8">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+		<base href=""/>
+		
+		<link rel="stylesheet" type="text/css" href="assets/styles/flex.css">
+		<link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+		<link rel="stylesheet" type="text/css" href="assets/styles/fonts.css">
+		<link rel="shortcut icon" href="favicon.ico">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		
+	<!--[if IE 8]><link rel="stylesheet" type="text/css" href="assets/styles/style_ie8.css"><![endif]-->
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	</head>
+	<body>
+		<header>        
+			<div class="container header">
+				<div class="row-between center">
+					<div class="logo">
+						<div class="logo-img"><a href="#" title="смартсервис"><img src="assets/images/logo.png" alt="logo"></a></div>
+						<div class="logo-text"><a href="#"><span>смарт</span>сервис</a>
+						<p>Ремонт сотовых телефонов, планшетов, ноутбуков</p></div>
+					</div>
+					<div class="adress">
+						<p><span>г.Екатеринбург</span></p>
+						<p><span>ул. восточная, 156</span></p>
+						<p>Пн.-пт. с 10-00 до 20-00</p>
+						<p>Сб.-вс. с 11-00 до 19-00</p>
+					</div>
+					<div class="adress">
+						<p><span>г.Екатеринбург</span></p>
+						<p><span>ул. крауля, 8</span></p>
+						<p>С 11-00 до 19-00</p>
+						<p>Каждый день без выходных</p>
+						<div class="searches">
+							<form action="#">
+								<span></span>
+								<input type="text">
+							</form>
+						</div>
+					</div>
+					<div class="tel">
+						<a href="tel:+73433283844">+7 (343) 328-38-44</a>
+						<a href="tel:+73433283594">+7 (343) 328-35-94</a>
+						<a href="#" class="call-back"><span>Заказать обратный звонок</span></a>
+					</div>
+				</div>
+				<nav>
+					<div class="nav">
+						<ul class="row-between center">
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">Наш прайс</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>			
+		</header>
+		<section>
+			<div class="wrapper">
+				<div class="main-header-wrapper" style="background-image: url(assets/images/title/title.jpg);">
+					<div class="container">
+						<div class="main-header padding">
+							<ul class="breadcramb">
+								<li><a href="#">Главная</a></li>
+								<li>&gt;</li>
+								<li>Текстовый шаблон</li>
+							</ul>
+							<div class="pagetitle">Текстовый шаблон</div>
+							<div class="intro-text">В современные дни жизнь людей тесно взаимосвязана с гаджетами: планшетами, сотовыми телефонами, нетбуками и другими портативными устройствами. Ваш телефон – кладезь информации: последних новостных лент, важных контактов, любимых фотоснимков.</div>
+						</div>
+					</div>
+				</div>
+				<div class="main">
+					<div class="container">
+						<div class="ticket-wrapper">
+							<form id="comment-form" action="" method="post" class="well">
+						        <div id="comment-preview-placeholder" style="display: none;"></div>
+						        <input type="hidden" name="thread" value="resource-13">
+						        <input type="hidden" name="parent" value="0">
+						        <input type="hidden" name="id" value="0">
+					   
+						        <div class="form-group">
+						            <label for="comment-name">Автор</label>
+						            <input type="text" name="name" value="" id="comment-name" class="form-control">
+						            <span class="error"></span>
+						        </div>
+						        <div class="form-group">
+						            <label for="comment-email">Email</label>
+						            <input type="text" name="email" value="" id="comment-email" class="form-control">
+						            <span class="error"></span>
+						        </div>
+
+						        <div class="form-group">
+						            <label for="comment-editor"></label>
+						            <div>
+						            	<div id="markItUpComment-editor" class="markItUp">
+						            		<div class="markItUpContainer">
+							            		<textarea name="text" id="comment-editor" cols="30" rows="10" class="form-control markItUpEditor"></textarea>
+							            		<div class="markItUpFooter">
+							            			<div class="markItUpResizeHandle"></div>
+							            		</div>
+						            		</div>
+						            	</div>
+						            </div>
+						        </div>
+						        <div class="form-group">
+								    <label for="comment-captcha" id="comment-captcha">Введите сумму 2 + 4</label>
+								    <input type="text" name="captcha" value="" id="comment-captcha" class="form-control">
+								    <span class="error"></span>
+								</div>
+						        <div class="form-actions">
+						            <input type="button" class="btn btn-default preview" value="Предпросмотр" title="Ctrl + Enter">
+						            <input type="submit" class="btn btn-primary submit" value="Написать" title="Ctrl + Shift + Enter">
+						            <span class="time"></span>
+						        </div>
+						    </form>
+							<div class="comments">
+  							    <h3 class="title">Комментарии (<span id="comment-total">2</span>)</h3>
+							    <div id="comments-wrapper">
+							        <ol class="comment-list" id="comments"><li class="ticket-comment" id="comment-1" data-parent="0" data-newparent="0" data-id="1">
+							    <div class="ticket-comment-body ticket-comment-guest">
+							        <div class="ticket-comment-header">
+							            <div class="ticket-comment-dot-wrapper">
+							                <div class="ticket-comment-dot"></div>
+							            </div>
+							            <img src="assets/images/decor/avatar.png" class="ticket-avatar" alt="">
+							            <span class="ticket-comment-author">Екатерина Завьялова</span>
+							            <span class="ticket-comment-createdon">05 марта 2017, 15:46</span>
+							            <span class="ticket-comment-link"><a href="#">#</a></span>
+							            <span class="ticket-comment-star"></span>
+							            
+							            <span class="ticket-comment-down"><a href="#" data-child="">↓</a></span>
+							            <span class="ticket-comment-rating inactive">
+							                <span class="rating" title="Всего 0: ↑0 и ↓0">0</span>
+							                <span class="vote plus" title="Нравится"><i class="glyphicon glyphicon-arrow-up"></i></span>
+							                <span class="vote minus" title="Не нравится"><i class="glyphicon glyphicon-arrow-down"></i></span>
+							            </span>
+							        </div>
+							        <div class="ticket-comment-text">
+							            А мне запороли самсунг А5...неудачно заменили битое стекло. Вернули телефон, конечно, в лучшем виде, чем был, но какая то непонятная царапина на новом экране по диагонали омрачает. Сделали скидку на неудачно оказанную услугу.
+							        </div>
+							    </div>
+							    <div class="comment-reply">
+							        <a href="#" class="reply" style="display: inline-block;">ответить</a>
+							        
+							    </div>
+							    <ol class="comments-list"><li class="ticket-comment" id="comment-2" data-parent="1" data-newparent="1" data-id="2">
+							    <div class="ticket-comment-body ticket-comment-guest">
+							        <div class="ticket-comment-header">
+							            <div class="ticket-comment-dot-wrapper">
+							                <div class="ticket-comment-dot"></div>
+							            </div>
+							            <img src="assets/images/decor/avatar.png" class="ticket-avatar" alt="">
+							            <span class="ticket-comment-author">Екатерина Завьялова</span>
+							            <span class="ticket-comment-createdon">Только что</span>
+							            <span class="ticket-comment-link"><a href="http://lare4ek.ru/novosti/13-malenkoe-chudo.html#comment-2">#</a></span>
+							            <span class="ticket-comment-star"></span>
+							            <span class="ticket-comment-up"><a href="#" data-id="2" data-parent="1">↑</a></span>
+							            <span class="ticket-comment-down"><a href="#" data-child="">↓</a></span>
+							            <span class="ticket-comment-rating inactive">
+							                <span class="rating" title="Всего : ↑0 и ↓0">0</span>
+							                <span class="vote plus" title="Нравится"><i class="glyphicon glyphicon-arrow-up"></i></span>
+							                <span class="vote minus" title="Не нравится"><i class="glyphicon glyphicon-arrow-down"></i></span>
+							            </span>
+							        </div>
+							        <div class="ticket-comment-text">
+							            А мне запороли самсунг А5...неудачно заменили битое стекло. Вернули телефон, конечно, в лучшем виде, чем был, но какая то непонятная царапина на новом экране по диагонали омрачает. Сделали скидку на неудачно оказанную услугу.
+							        </div>
+							    </div>
+							    <div class="comment-reply">
+							        <a href="#" class="reply">ответить</a>
+							        <a href="#" class="edit">изменить</a>
+							    </div>
+							    <ol class="comments-list"></ol>
+							</li></ol>
+							</li></ol>
+							    </div>
+							<div id="comments-wrapper">
+							        <ol class="comment-list" id="comments"><li class="ticket-comment" id="comment-1" data-parent="0" data-newparent="0" data-id="1">
+							    <div class="ticket-comment-body ticket-comment-guest">
+							        <div class="ticket-comment-header">
+							            <div class="ticket-comment-dot-wrapper">
+							                <div class="ticket-comment-dot"></div>
+							            </div>
+							            <img src="assets/images/decor/avatar.png" class="ticket-avatar" alt="">
+							            <span class="ticket-comment-author">Екатерина Завьялова</span>
+							            <span class="ticket-comment-createdon">05 марта 2017, 15:46</span>
+							            <span class="ticket-comment-link"><a href="#">#</a></span>
+							            <span class="ticket-comment-star"></span>
+							            
+							            <span class="ticket-comment-down"><a href="#" data-child="">↓</a></span>
+							            <span class="ticket-comment-rating inactive">
+							                <span class="rating" title="Всего 0: ↑0 и ↓0">0</span>
+							                <span class="vote plus" title="Нравится"><i class="glyphicon glyphicon-arrow-up"></i></span>
+							                <span class="vote minus" title="Не нравится"><i class="glyphicon glyphicon-arrow-down"></i></span>
+							            </span>
+							        </div>
+							        <div class="ticket-comment-text">
+							            А мне запороли самсунг А5...неудачно заменили битое стекло. Вернули телефон, конечно, в лучшем виде, чем был, но какая то непонятная царапина на новом экране по диагонали омрачает. Сделали скидку на неудачно оказанную услугу.
+							        </div>
+							    </div>
+							    <div class="comment-reply">
+							        <a href="#" class="reply" style="display: inline-block;">ответить</a>
+							        
+							    </div>
+							    
+							</li></ol>
+							    </div>
+							    <div id="comments-tpanel">
+							        <div id="tpanel-refresh" class=""></div>
+							        <div id="tpanel-new" style="display: none;"></div>
+							    </div>
+							</div>
+						</div>
+						<div class="pagination">
+								<ul class="pagination">
+									<li class="disabled"><span>Первая</span></li>
+									<li class="disabled"><span>«</span></li>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li class="control"><a href="#">»</a></li>
+									<li class="control"><a href="#">Последняя</a></li>
+								</ul>
+							</div>
+						<div class="content-text">
+							
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="main-footer-wrapper">
+					<div class="container">
+						<div class="row-left padding">
+							<div class="item white">
+								<div class="title ">Отзывы наших клиентов</div>
+								<div class="logo-text"><a href="#"><span>смарт</span>сервис</a></div>
+								<p>Мы откроем второе дыхание вашим гаджетам!</p>
+								<a href="#" class="btn">Читать отзывы</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="request-wrapper">
+					<div class="container">
+						<div class="request row-right padding">
+							<div class="request-form item2">
+								<div class="title red text-center">Оставьте заявку</div>
+								<p>И мы свяжемся с вами в ближайшее время</p>
+								<form action="" method="post" class="ajax_form af_example">
+								    <div class="form-group">
+								        <label class="control-label" for="af_name"></label>
+								        <div class="controls">
+								            <input type="text" id="af_name" name="name" value="" placeholder="Имя" class="form-control"/>
+								            <span class="error_name"></span>
+								        </div>
+								    </div>
+								    <div class="form-group">
+								        <label class="control-label" for="af_phone"></label>
+								        <div class="controls">
+								            <input type="text" id="af_phone" name="phone" value="" placeholder="Тел" class="form-control"/>
+								            <span class="error_phone"></span>
+								        </div>
+								    </div>
+
+								    <div class="form-group">
+								        <label class="control-label" for="af_email"></label>
+								        <div class="controls">
+								            <input type="email" id="af_email" name="email" value="" placeholder="E-mail" class="form-control"/>
+								            <span class="error_email"></span>
+								        </div>
+								    </div>
+
+								    <div class="form-group">
+								        <label class="control-label" for="af_message"></label>
+								        <div class="controls">
+								            <textarea id="af_message" name="message" class="form-control" rows="5" placeholder="Техт сообщения"></textarea>
+								            <span class="error_message"></span>
+								        </div>
+								    </div>
+
+								    <div class="form-group">
+								        <div class="controls">
+								            <button type="submit" class="btn btn-primary">Отправить</button>
+								        </div>
+								    </div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="map-wrapper">
+					<div class="container">
+						<div class="maps">
+							<div class="item2"><img src="assets/images/pictures/map1.jpg" alt=""></div>
+							<div class="item2"><img src="assets/images/pictures/map2.jpg" alt=""></div>
+						</div>
+					</div>
+				</div>			
+			</div>
+		</section>
+		<footer>
+			<div class="footer-main">
+				<div class="container">
+					<div class="row-between center">
+						<nav>
+							 <ul class="footer-nav">
+								<li><a href="#">Главная</a></li>
+								<li><a href="#">Наш прайс</a></li>
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">Отзывы</a></li>
+								<li><a href="#">Новости</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+						<div class="adress">
+							<p><span>г.Екатеринбург</span></p>
+							<p><span>ул. восточная, 156</span></p>
+							<p>Пн.-пт. с 10-00 до 20-00</p>
+							<p>Сб.-вс. с 11-00 до 19-00</p>
+						</div>
+						<div class="adress">
+							<p><span>г.Екатеринбург</span></p>
+							<p><span>ул. крауля, 8</span></p>
+							<p>С 11-00 до 19-00</p>
+							<p>Каждый день без выходных</p>
+						</div>
+						<div class="tel">
+							<a href="tel:+73433283844">+7 (343) 328-38-44</a>
+							<a href="tel:+73433283594">+7 (343) 328-35-94</a>
+							<a href="#" class="btn">Заказать звонок</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-wrapper">
+				<div class="container">
+					<div class="row-between white center">
+						<div class="footer-logo text-center">
+							<p><span>смартсервис</span></p>
+							<p>&copy;2017. Все права защищены</p>
+						</div>
+						<div class="social">							
+							<a href="#" class="vk"><span></span></a>
+							<a href="#" class="tw"><span></span></a>
+							<a href="#" class="fb"><span></span></a>
+							<a href="#" class="ok"><span></span></a>
+						</div>
+						<div class="counter">
+							<img src="assets/images/decor/top.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="assets/scripts/general.js"></script>
+		<script src="assets/scripts/bxslider/jquery.bxslider.min.js"></script>
+	</body>
+</html>
